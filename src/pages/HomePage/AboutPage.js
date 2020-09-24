@@ -18,9 +18,11 @@ export const AboutContainer = styled.div`
     }
 `;
 export const Tech = styled.div`
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 90px);
+    width: 90%;
     margin-top: 16px;
-    p{
+    p{  
         font-size: 14px;
         padding: 5px;
         margin: 0 15px 15px 0;
@@ -37,11 +39,16 @@ export const AboutPage = () => {
             dolore magna aliqua. 
             </p>
             <Tech>
-                <p>NodeJS</p>
-                <p>MySQL</p>
+                <p>Git</p>
                 <p>HTML</p>
                 <p>CSS</p>
+                <p>AWS</p>
+                <p>React</p>
+                <p>Hooks</p>
+                <p>MySQL</p>
+                <p>NodeJS</p>
                 <p>JavaScript</p>
+                <p>TypeScript</p>
             </Tech>
             <Button variant="contained">CV em PDF</Button>
         </AboutContainer>
